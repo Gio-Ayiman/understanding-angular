@@ -10,17 +10,18 @@ export class ChildComponent implements OnInit {
 
   @Input()
   name = '';
+  item = '';
 
   @Output()
-  voter = new EventEmitter<boolean>()
+  voter = new EventEmitter<string>()
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  vote(decision: boolean) {
-    this.voter.emit(decision);
+  send() {
+    this.voter.emit(this.item);
   }
 
 }

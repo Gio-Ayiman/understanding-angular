@@ -1,5 +1,8 @@
 <div>
   <h1>{{name}}</h1>
-  <button (click)="vote(true)">D'accord</button>
-  <button (click)="vote(false)">Pas d'accord</button>
+
+  <form class="">
+    <input type="text" [(ngModel)]="item" [ngModelOptions]="{standalone: true}">
+    <button (click)="send()">Ajouter</button>
+  </form>
 </div>

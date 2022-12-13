@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { SharedRoutingModule } from './shared-routing.module';
 import { ViewEncapsulationModule } from '../feature/view-encapsulation/view-encapsulation.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -12,6 +13,7 @@ import { ViewEncapsulationModule } from '../feature/view-encapsulation/view-enca
     SharedRoutingModule,
   ],
   exports: [
+    FormsModule,
     ViewEncapsulationModule
   ]
 })

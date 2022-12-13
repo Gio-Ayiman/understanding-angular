@@ -1,2 +1,8 @@
-<interaction-child name="Giovanni", >
+<interaction-child (voter)="addItem($event)">
 </interaction-child>
+
+<ol>
+  <li *ngFor="let item of items">
+      {{item}}
+  </li>
+</ol>

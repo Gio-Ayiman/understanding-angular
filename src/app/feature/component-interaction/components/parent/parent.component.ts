@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
 
+  items = ['Giovanni', 'fidele']
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  addItem(event: string) {
+    this.items.push(event);
+  }
 }
